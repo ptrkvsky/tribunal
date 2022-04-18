@@ -3,6 +3,7 @@ import { faTwitch, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import DesktopImage from '../components/DesktopImage'
 
 export default function Card({ emission, desktop }) {
+	debugger
     return <div className="card">
         <div className="card-image">
             <a target='_blank' rel="noreferrer" href={`${emission.url}?t=${desktop.time}`}><DesktopImage id={desktop.id} />
